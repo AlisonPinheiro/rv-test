@@ -1,0 +1,64 @@
+
+//color
+$c-black: #000000;
+$c-red: #ff4918;
+$c-white: #ffffff;
+
+$c-gray-darker: #c4c4c4; //not used
+$c-gray-dark: #c4c4c4;
+$c-gray-twoLighter: #d3d3d3;
+$c-gray: #e6e7e8;
+$c-gray-light: #e6e7e8; //not used
+$c-gray-lighter: #e6e7e8; //not used
+$c-gray-darkest: #b2b2b2;
+$c-light-gray: #7b7b7b;
+$c-green: #27ae60;
+
+$c-error: $c-red;
+$c-primary: $c-black;
+$c-secondary: $c-white;
+
+$c-tag: #949494;
+
+$c-error-dark: #7a1919;
+
+//font
+$f-base: "Montserrat", sans-serif;
+
+$f-color: $c-primary;
+$f-size-mi: 9px;
+$f-size-xs: 10px;
+$f-size-sm: 12px;
+$f-size-md: 13px;
+$f-size-sd: 14px;
+$f-size-lg: 15px; //unused
+$f-size-xl: 16px;
+$f-size-hg: 18px;
+$f-size-xh: 20px;
+$f-size-sp1: 30px;
+$f-size-sp2: 60px;
+$f-size-sp3: 80px;
+$f-size-sp4: 100px;
+$f-size-sp5: 150px;
+$f-size: $f-size-sd;
+
+//space
+$s-xs: 5px;
+$s-sm: 10px;
+$s-sd: 15px;
+$s-md: 20px;
+$s-lg: 30px;
+$s-xl: 40px;
+$s-hg: 50px;
+$s-xh: 60px;
+
+//transition
+$t-fast: 0.15s;
+$t-normal: 0.3s;
+$t-slow: 0.5s;
+$t: all $t-fast linear;
+
+//overlay
+$o-color: $c-white;
+$o-opacity: 0.7;
+$o-background: rgba($o-color, $o-opacity);

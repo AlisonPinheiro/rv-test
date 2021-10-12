@@ -1,4 +1,3 @@
-body {
-    font-family: "Montserrat", sans-serif;
-    background-color: green;
-}
+@import 'src/base/variables.scss';
+@import 'src/base/global';
+@import 'src/base/normalize';
