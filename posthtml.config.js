@@ -15,6 +15,9 @@ module.exports = {
     },
     'posthtml-include': {
       root: path.resolve(__dirname, 'src')
-    }
+    },
+    'posthtml-inline-svg': {
+      root: path.resolve(__dirname, 'src')
+    },
   }
 }
