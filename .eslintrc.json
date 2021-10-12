@@ -10,7 +10,7 @@
     "parserOptions": {
         "sourceType": "module"
     },
-    "ignorePatterns": ["posthtml.config.js"],
+    "ignorePatterns": ["posthtml.config.js", "src/**/*.html"],
     "rules": {
     }
 }
