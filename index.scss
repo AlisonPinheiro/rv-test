@@ -1,3 +1,7 @@
+//base
 @import 'src/base/variables.scss';
 @import 'src/base/global';
 @import 'src/base/normalize';
+@import 'src/base/media-query';
+//modules
+@import 'src/modules/container';
