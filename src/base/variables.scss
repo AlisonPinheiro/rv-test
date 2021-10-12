@@ -9,6 +9,7 @@ $screen-xxl: 1320px;
 $c-black: #000000;
 $c-red: #FD9872;
 $c-white: #ffffff;
+$c-gray:#848484;
 
 $c-green-light: #75BC97;
 $c-green-dark: #15573F;
@@ -20,7 +21,7 @@ $c-secondary: $c-green-dark;
 //font
 $f-base: "Montserrat", sans-serif;
 
-$f-color: $c-primary;
+$f-color: $c-gray;
 $f-size-mi: 9px;
 $f-size-xs: 10px;
 $f-size-sm: 12px;
