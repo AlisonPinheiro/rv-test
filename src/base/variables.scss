@@ -7,26 +7,15 @@ $screen-xxl: 1320px;
 
 //color
 $c-black: #000000;
-$c-red: #ff4918;
+$c-red: #FD9872;
 $c-white: #ffffff;
 
-$c-gray-darker: #c4c4c4; //not used
-$c-gray-dark: #c4c4c4;
-$c-gray-twoLighter: #d3d3d3;
-$c-gray: #e6e7e8;
-$c-gray-light: #e6e7e8; //not used
-$c-gray-lighter: #e6e7e8; //not used
-$c-gray-darkest: #b2b2b2;
-$c-light-gray: #7b7b7b;
-$c-green: #27ae60;
+$c-green-light: #75BC97;
+$c-green-dark: #15573F;
 
 $c-error: $c-red;
-$c-primary: $c-black;
-$c-secondary: $c-white;
-
-$c-tag: #949494;
-
-$c-error-dark: #7a1919;
+$c-primary: $c-green-light;
+$c-secondary: $c-green-dark;
 
 //font
 $f-base: "Montserrat", sans-serif;

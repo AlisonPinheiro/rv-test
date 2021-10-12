@@ -1,0 +1,42 @@
+.bannertv{
+  &__body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-color: $c-primary;
+  }
+  &__images{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__primary-image{
+    height: 70%;
+    img{
+      object-fit: cover;
+      object-position: bottom;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__secondary-image{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    padding: 0 20px;
+  }
+  &__text{
+    color: $c-white;
+    font-size: 40px;
+    line-height: 48px;
+    position: absolute;
+    width: 90%;
+    top:10%;
+    left: 0;
+    .icon{
+      width: 35px;
+      margin-top: 20px;
+    }
+  }
+}
