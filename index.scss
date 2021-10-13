@@ -5,8 +5,10 @@
 @import 'src/base/media-query';
 //modules
 @import 'src/modules/container';
-
+//subtemplates
 @import 'src/templates/subtemplates/header/index';
-
+//components
 @import 'src/components/banner-tv/index';
 @import 'src/components/steps/index';
+@import 'src/components/shelf/index';
+@import 'src/components/product/index';

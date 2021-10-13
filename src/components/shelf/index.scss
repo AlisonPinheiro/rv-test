@@ -1,0 +1,26 @@
+.shelf{
+  background-color: #F2F2F2;
+  padding: 30px 0;
+  &__no-results{
+    color: #A9A9A9;
+    h4{
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 55px;
+      padding: 30px 0;
+    }
+    p{
+      font-size: 16px;
+      line-height: 27px;
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    i{
+      max-width: 100px;
+      display: block;
+      margin: 0 auto;
+
+    }
+
+  }
+}

@@ -1,3 +1,4 @@
+import shelf from '../shelf'
 let $ = document.querySelectorAll.bind(document)
 let $$ = document.querySelector.bind(document)
 
@@ -36,7 +37,7 @@ function formSubmit() {
     .then(function (response) {
       return response.json()
     })
-    .then((response) => console.log(response))
+    .then((response) => shelf(response))
 
   checkInputChanges()
 }
