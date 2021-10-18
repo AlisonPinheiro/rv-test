@@ -9,8 +9,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "parcel": "1.12.4",
-    "parcel-plugin-inlinesvg": "^0.1.1"
+    "parcel": "1.12.4"
   },
   "devDependencies": {
     "eslint": "^7.3.1",
