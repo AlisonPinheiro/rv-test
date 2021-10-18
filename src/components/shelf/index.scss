@@ -23,4 +23,29 @@
     }
 
   }
+  &__products{
+    display: none;
+  }
+  &__head{
+    > img{
+      max-width: 150px;
+    }
+
+    h3{
+      color: #0C261C;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 49px;
+      padding: 20px 0;
+    }
+  }
+  &__product-list{
+    display: flex;
+    width: 110%;
+    overflow-y: scroll;
+    position: relative;
+    left: -20px;
+  }
+
 }

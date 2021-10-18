@@ -1,4 +1,4 @@
-import shelf from '../shelf'
+import mountShelf from '../shelf'
 let $ = document.querySelectorAll.bind(document)
 let $$ = document.querySelector.bind(document)
 
@@ -26,6 +26,12 @@ function checkInputChanges() {
   })
 }
 
+function noResults(error) {
+  $$('.shelf__products').style.display = 'none'
+  $$('.shelf__no-results').style.display = 'block'
+  console.log(error, 'passei')
+}
+
 function formSubmit() {
   let sun = $$('.steps__list--sunlight .steps__item.active input').value
   let water = $$('.steps__list--wateringcan .steps__item.active input').value
@@ -37,7 +43,16 @@ function formSubmit() {
     .then(function (response) {
       return response.json()
     })
-    .then((response) => shelf(response))
+    .then((response) => {
+      if (response.status === 404) {
+        noResults()
+      } else {
+        mountShelf(response)
+      }
+    })
+    .catch((error) => {
+      console.error(error)
+    })
 
   checkInputChanges()
 }
