@@ -59,6 +59,7 @@
     overflow-y: scroll;
     position: relative;
     left: -20px;
+    padding-bottom: 50px;
     @include desktop(){
       left: 0;
       overflow-y: auto;

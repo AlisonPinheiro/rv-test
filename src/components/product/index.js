@@ -1,6 +1,5 @@
 const product = (productItem) => {
   const productList = productItem.map((item) => {
-    console.log(item, 'item')
     const favorite = item.staff_favorite
     return `
       <div class="product__item ${favorite ? 'is-favorite' : ''}">
