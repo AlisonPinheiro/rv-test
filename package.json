@@ -2,11 +2,11 @@
   "name": "front-end-test-2",
   "version": "1.0.0",
   "description": "Simple Parcel Sandbox",
-  "main": "index.html",
+  "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel serve index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --no-minify"
   },
   "dependencies": {
     "parcel": "1.12.4"
