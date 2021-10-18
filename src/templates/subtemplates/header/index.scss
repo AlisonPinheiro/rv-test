@@ -3,7 +3,14 @@ header{
   width: 100%;
   z-index: 3;
   padding: 15px 0;
+  @include desktop(){
+    padding: 50px 0 ;
+  }
   svg{
     max-width: 170px;
+    @include desktop(){
+      max-width: 210px;
+
+    }
   }
 }

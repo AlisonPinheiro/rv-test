@@ -27,3 +27,16 @@ img {
 *::after {
   box-sizing: inherit;
 }
+
+.hide{
+  &--desktop{
+    @include desktop(){
+      display: none !important;
+    }
+  }
+  &--mobile{
+    @include mobile(){
+      display: none !important;
+    }
+  }
+}
