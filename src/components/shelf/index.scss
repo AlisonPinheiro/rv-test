@@ -1,0 +1,71 @@
+.shelf {
+  background-color: #F2F2F2;
+  padding: 30px 0;
+  @include desktop(){
+    padding: 50px 0;
+  }
+  &__no-results {
+    color: #A9A9A9;
+    @include desktop(){
+      display: flex;
+    }
+    h4 {
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 55px;
+      padding: 30px 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 27px;
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    i {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto;
+      @include desktop(){
+        display: inline-block;
+      }
+    }
+  }
+  &__no-results-text{
+    @include desktop(){
+      display: inline-block;
+
+    }
+  }
+  &__products {
+    display: none;
+  }
+  &__head {
+    > img {
+      max-width: 150px;
+    }
+
+    h3 {
+      color: #0C261C;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 49px;
+      padding: 20px 0;
+    }
+  }
+  &__product-list {
+    display: flex;
+    width: 110%;
+    overflow-y: scroll;
+    position: relative;
+    left: -20px;
+    padding-bottom: 50px;
+    @include desktop(){
+      left: 0;
+      overflow-y: auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+    }
+  }
+}
