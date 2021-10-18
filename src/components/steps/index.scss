@@ -39,6 +39,15 @@
         padding: 0 30px;
       }
     }
+    &.active{
+      .steps__list{
+        opacity: 1;
+        button{
+          cursor: pointer;
+          pointer-events: all;
+        }
+      }
+    }
   }
   &__list {
     max-width: 220px ;
@@ -54,6 +63,7 @@
     position: relative;
     background-color: $c-white;
     transition: 0.3s;
+    opacity: 0.5;
     &::after {
       content: "";
       position: absolute;
@@ -101,6 +111,8 @@
       align-items: center;
     }
     button {
+      cursor: not-allowed;
+      pointer-events: none;
       padding: 5px 20px;
       width: 100%;
       text-align: left;

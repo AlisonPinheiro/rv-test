@@ -11,6 +11,14 @@ function toggleList(element) {
   }
 }
 
+function allowSteps() {
+  try {
+    $$('.steps__box:not(.active)').classList.add('active')
+  } catch (error) {
+    return
+  }
+}
+
 function inputOptions(element) {
   let stepList = element.srcElement.parentElement.parentElement
   const stepItem = element.srcElement.parentElement
@@ -18,6 +26,7 @@ function inputOptions(element) {
   stepList.classList.remove('active')
   stepItem.classList.add('active')
   toggleList(element)
+  allowSteps()
 }
 
 function checkInputChanges() {
@@ -26,10 +35,9 @@ function checkInputChanges() {
   })
 }
 
-function noResults(error) {
+function noResults() {
   $$('.shelf__products').style.display = 'none'
   $$('.shelf__no-results').style.display = 'block'
-  console.log(error, 'passei')
 }
 
 function formSubmit() {
